@@ -240,5 +240,6 @@ public class ComponentsDefine {
     public static final OfficialComponent WEBSPHERE = new OfficialComponent(148, "WebSphere");
 
     public static final OfficialComponent AEROSPIKE = new OfficialComponent(149, "Aerospike");
+    public static final OfficialComponent DM_JDBC_DRIVER = new OfficialComponent(150, "dm-jdbc-driver");
 
 }

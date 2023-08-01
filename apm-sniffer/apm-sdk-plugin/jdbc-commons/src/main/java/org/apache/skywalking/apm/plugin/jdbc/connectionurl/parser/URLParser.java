@@ -36,6 +36,7 @@ public class URLParser {
     private static final String KYLIN_JDBC_URK_PREFIX = "jdbc:kylin";
     private static final String IMPALA_JDBC_URK_PREFIX = "jdbc:impala";
     private static final String CLICKHOUSE_JDBC_URK_PREFIX = "jdbc:clickhouse";
+    private static final String DM_JDBC_URK_PREFIX = "jdbc:dm";
 
     public static ConnectionInfo parser(String url) {
         ConnectionURLParser parser = null;
@@ -60,6 +61,8 @@ public class URLParser {
             parser = new ImpalaJdbcURLParser(url);
         } else if (lowerCaseUrl.startsWith(CLICKHOUSE_JDBC_URK_PREFIX)) {
             parser = new ClickHouseURLParser(url);
+        }else if (lowerCaseUrl.startsWith(DM_JDBC_URK_PREFIX)) {
+            parser = new DmJdbcURLParser(url);
         }
         return parser.parse();
     }

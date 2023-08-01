@@ -1,0 +1,7 @@
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.DriverInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.ConnectionInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.StatementInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.PreparedStatementInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.PreparedStatementSetterInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.PreparedStatementNullSetterInstrumentation
+dm-8.x=org.apache.skywalking.apm.plugin.jdbc.dm.define.PreparedStatementIgnoredSetterInstrumentation
